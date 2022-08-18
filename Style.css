@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family: "Candara Light";
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+.row{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/***POCETNA STRANICA***/
+
+#myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter:brightness(50%);
+}
+
+header{
+    /*background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/image0.jpg") ;*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+    /*animation: change 28s infinite;*/
+}
+
+@keyframes change {
+    0%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/hbg1.jpg") ;
+    }
+    20%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/hbg2.jpg") ;
+    }
+    40%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/hbg3.jpg") ;
+    }
+    60%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/hbg4.jpg") ;
+    }
+    80%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/hbg5.jpg") ;
+    }
+    100%{
+        background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.9)) ,url("images/image0.jpg") ;
+    }
+}
+
+.header1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, sans-serif;
+}
+
+.header1-text{
+    margin-bottom: 100px;
+}
+
+.heading1{
+    font-size: 500%;
+    color: white;
+    font-weight: 50;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    width: max-content;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+.main-navigation{
+    list-style: none;
+    float: right;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: 120%;
+}
+
+.main-navigation li a:link,
+.main-navigation li a:visited{
+    text-decoration: none;
+    color: white;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-navigation li a:hover,
+.main-navigation li a:active{
+    border-bottom: 3px solid cyan;
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 200px;
+    font-size: 140%;
+}
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: royalblue;
+    color: whitesmoke;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: goldenrod;
+    color: black;
+}
+
+/***O NAMA***/
+
+.oNama{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)) ,url("images/oNamaBG.jpg") ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.oNamaHeading{
+    color: black;
+    font-size: 290%;
+    font-weight: 600;
+    margin-bottom:  50px;
+}
+
+.p1{
+    color: black;
+    margin-bottom: 50px;
+    font-size: 130%;
+}
+
+.a1{
+    color: blue;
+    margin-bottom: 50px;
+    font-size: 130%;
+}
+
+.ONBox{
+    margin-top: 120px;
+}
+
+.ONBox1{
+    background-color: lightgray;
+    padding: 40px;
+    border-radius: 2%;
+}
+
+.ONBox2{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.oNama-images{
+    height: 400px;
+    width: auto;
+    margin-top: 120px;
+    margin-left: 100px;
+    border-radius: 8%;
+}
+
+/***LOKACIJA***/
+
+.lokacija{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)) ,url("images/lokacija-bg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+address iframe{
+    width: 90%;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.lokacijaBox{
+    margin-top: 50px;
+}
+
+.p2{
+    font-size: 200%;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.click1{
+    font-size: 200%;
+    background-color: lightslategray;
+    border-radius: 100px;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: blue;
+}
+
+.lokacija-images{
+    height: 300px;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 8%;
+}
+
+.lokacija-images1{
+    float: left;
+}
+
+.lokacija-images2{
+    float: right;
+}
+
+/***UPRAVA I ČLANOVI***/
+
+.clanovi{
+    height: 100vh;
+    color: white;
+    background-color:darkslateblue;
+}
+
+.clanoviBox{
+    margin-top: 60px;
+}
+
+.clanovi-image{
+    height: 300px;
+    width: auto;
+    margin-bottom: 20px;
+    border-radius: 8%;
+    display: block;
+    margin-left: 160px;
+    margin-right: auto;
+}
+
+.clanoviHeading{
+    font-size: 290%;
+    font-weight: 600;
+    margin-bottom:  30px;
+    margin-left: 20px;
+    color: #cccccc;
+}
+
+cite{
+    display: block;
+    margin-top: 25px;
+    font-size: 200%;
+}
+
+cite img{
+    height: 110px;
+    width: 130px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 60px;
+}
+
+.uprava2{
+    font-size: 130%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.uprava1{
+    border-radius: 2%;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    opacity: .7;
+    transform: scale(0.8);
+    transition:transform 0.5s, opacity 0.5s;
+}
+
+.uprava1:hover,
+.uprava1:active{
+    background-color: goldenrod;
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    padding: 4px;
+}
+
+.uprava3{
+    margin-top: -20px;
+}
+
+.clanovi-text{
+    font-size: 120%;
+}
+
+.clanovi2{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vertical {
+    border-left: 3px solid white;
+    height: 100vh;
+    position:absolute;
+    left: 50%;
+}
+
+/***LOKACIJA***/
+
+.novosti{
+    height: 100vh;
+    background-color: mediumslateblue;
+}
+
+.h1-novosti{
+    padding-top: 30px;
+    font-size: 400%;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing: 10px;
+
+}
+
+.h2-novosti{
+    text-align: center;
+    font-size: 150%;
+    padding-top: 30px;
+}
+
+.novosti-image{
+    height: 240px;
+    width: 370px;
+    border-radius: 8%;
+    display: block;
+    margin: 30px auto 20px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.p3{
+    font-size: 120%;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.p4{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: blue;
+}
+
+.novost1{
+    padding: 10px;
+    border-radius: 2%;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    opacity: .7;
+    transform: scale(0.8);
+    transition:transform 0.5s, opacity 0.5s;
+}
+
+.novost1:hover,
+.novost1:active{
+    background-color: goldenrod;
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/***OBAVIJESTI***/
+
+.obavijesti{
+    background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)) ,url("images/obavijesti-bg.jpg") ;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.h1-obavijesti{
+    padding-top: 50px;
+    font-size: 450%;
+    color: black;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.h2-obavijesti{
+    font-size: 300%;
+    padding-top: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/***SPONZORI***/
+.sponzori{
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.h2-sponzori{
+    padding-top: 60px;
+    font-size: 350%;
+    margin-bottom: 80px;
+    letter-spacing: 10px;
+}
+
+.sponzor-row{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sponzor-logo{
+    width: 150px;
+    height: 170px;
+    opacity: 0.8;
+    transform: scale(0.8);
+    transition:transform 0.5s, opacity 0.5s;
+}
+
+.sponzor-logo:hover,
+.sponzor-logo:active{
+    color: black;
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/***KONTAKT***/
+.kontakt{
+    background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)) ,url("images/obavijesti-bg.jpg") ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.h1-kontakt{
+    font-size: 400%;
+    letter-spacing: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.contact-icon{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.ph-num{
+    font-size: 200%;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 2%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: darkslateblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+/***JQUERY ANIMATIONS***/
+
+.ONBox1,
+.ONBox2,
+.lokacijaBox1,
+.lokacijaBox2,
+.clanoviBox{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.ONBox1.animate__animated,
+.ONBox2.animate__animated,
+.lokacijaBox1.animate__animated,
+.lokacijaBox2.animate__animated,
+.clanoviBox.animate__animated{
+    opacity: 1;
+}
+
+
+/***THANK YOU PAGE***/
+ .ty{
+     text-align: center;
+     padding-top: 20%;
+     font-size: 25px;
+     font-weight: 500;
+     color: white;
+ }
+
+ .bg{
+     background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)) ,url("images/ty-bg.jpg") ;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     text-align: center;
+     background-attachment: fixed;
+ }
